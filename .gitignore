@@ -29,6 +29,7 @@ build
 .vscode
 .env.**
 .env
+*.zip
 
 
 
