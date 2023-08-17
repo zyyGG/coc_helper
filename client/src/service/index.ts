@@ -3,6 +3,7 @@ import { AxiosResponse } from 'axios'
 
 import type { RequestConfig } from './request/types'
 
+
 // 返回的数据接口，整体接口
 export interface YWZResponse<T> {
   code: number,
@@ -19,9 +20,6 @@ interface YWZRequestConfig<T, R> extends RequestConfig<YWZResponse<R>> {
 const request = new Request({
   baseURL: import.meta.env.VITE_BASE_URL,
   timeout: 1000 * 60 * 5,
-  headers: {
-    token: import.meta.env.VITE_TEST_TOKEN
-  },
   interceptors: {
     // 请求拦截器
     requestInterceptors: config => config,
