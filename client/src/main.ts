@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './assets/style.css'
+import './assets/global.css'
 import App from './App.vue'
 import { createPinia } from 'pinia'
 // 引入路由
