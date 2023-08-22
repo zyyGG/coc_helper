@@ -9,8 +9,7 @@ export default async (data?: loginReq) => {
 }
 
 interface loginReq {
-  user_name: string,
-  password: string
+  info:string
 }
 interface loginRes {
   token: string
