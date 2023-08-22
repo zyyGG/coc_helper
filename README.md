@@ -4,7 +4,10 @@
 1. `client` web客户端，这里放的是前端源代码
 2. `server` web服务端，这里放的是后端源代码
 3. `demo` 一些测试用的工具或者一些简单的原型代码
-4. `package.json`
+4. `dist` 构建完成的资源文件
+5. `package.json`
+6. `env.development` 本地配置
+7. `env.production` 生产配置
 
 ## 项目安装与配置
 ### 前置安装
@@ -12,7 +15,7 @@
   npm install --global nodemon ts-node
   npm run auto-install
 
-## 项目的启动配置等等
+## 项目的启动构建方法
 ### 启动 run
 `npm run dev[:(目标目录)]`
   同时启动前端与后端服务器，并预览。
